@@ -1,0 +1,30 @@
+{
+  "name": "one-listener-per-element",
+  "version": "1.0.0",
+  "description": "Single-purpose module for ensuring that DOM elements have only one event listener per element.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jimkang/one-listener-per-element.git"
+  },
+  "keywords": [
+    "DOM"
+  ],
+  "author": "Jim Kang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimkang/one-listener-per-element/issues"
+  },
+  "homepage": "https://github.com/jimkang/one-listener-per-element",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.5.0",
+    "uglify-es": "^3.1.9"
+  },
+  "dependencies": {}
+}
