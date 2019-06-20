@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Single-purpose module for ensuring that DOM elements have only one event listener per element.",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "test": "make test"
   },
