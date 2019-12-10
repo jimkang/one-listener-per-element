@@ -1,6 +1,6 @@
 {
   "name": "one-listener-per-element",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Single-purpose module for ensuring that DOM elements have only one event listener per element.",
   "main": "index.js",
   "scripts": {
