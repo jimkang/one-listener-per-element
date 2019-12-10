@@ -2,7 +2,8 @@ function OneListenerPerElement() {
   var oldListeners = {};
 
   return {
-    setListener
+    setListener,
+    on
   };
 
   // Makes sure there is one listener per element-event combination.
@@ -15,6 +16,11 @@ function OneListenerPerElement() {
     }
     element.addEventListener(eventName, listener);
     oldListeners[listenerKey] = listener;
+  }
+
+  // Shorthand for setListener
+  function on(selector, eventName, listener) {
+    setListener({ eventName, listener, element: document.querySelector(selector) });
   }
 }
 

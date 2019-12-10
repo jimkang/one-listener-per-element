@@ -1,10 +1,9 @@
 var OLPE = require('./index');
 
 var firstButton = document.getElementById('first-button');
-var secondButton = document.getElementById('second-button');
 var messageField = document.getElementById('message');
 
-var { setListener } = OLPE();
+var { setListener, on } = OLPE();
 
 for (let i = 0; i < 10; ++i) {
   addListenersToButtons(i);
@@ -16,11 +15,7 @@ function addListenersToButtons(listenerNumber) {
     listener: firstButtonListener,
     element: firstButton
   });
-  setListener({
-    eventName: 'click',
-    listener: secondButtonListener,
-    element: secondButton
-  });
+  on('#second-button', 'click', secondButtonListener);
 
   function firstButtonListener() {
     messageField.textContent =

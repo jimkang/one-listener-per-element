@@ -22,10 +22,13 @@ Usage
 
     var OLPE = require('one-listener-per-element');
 
-    var { setListener } = OLPE();
+    var { setListener, on } = OLPE();
     var el = document.getElementById('clickable-thing');
     setListener({ eventName: 'click', listener: onThingClick, element: el });
-    setListener({ eventName: 'click', listener: onThingClick2, element: el });
+
+Or if you want to use a selector instead of a element, there's this shorthand method:
+
+    on('#cool-button', 'click', onThingClick2);
 
 License
 -------
